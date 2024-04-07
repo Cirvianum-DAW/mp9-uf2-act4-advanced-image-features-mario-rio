@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Image Map</title>
+</head>
+<body>
+
+<h1>Clickable Image Map of Spain</h1>
+
+<p>Click on different regions of the map to learn more:</p>
+
+<img src="img/spain_map.png" alt="Map of Spain" usemap="#spainmap" width="600" height="600">
+
+<map name="spainmap">
+  <area shape="circle" coords="300,300,20" alt="Madrid" href="https://www.madrid.es/portal/site/munimadrid">
+  <area shape="rect" coords="460,200,520,260" alt="Barcelona" href="https://www.barcelona.cat/es">
+  <area shape="poly" coords="200,380,240,400,240,440,200,460,160,440,160,400" alt="Sevilla" href="https://www.sevilla.org/">
+</map>
+
+</body>
+</html>
