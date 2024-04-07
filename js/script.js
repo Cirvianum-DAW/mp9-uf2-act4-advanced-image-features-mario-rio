@@ -5,7 +5,7 @@
 
 // Example code to load an image dynamically
 const image = document.createElement('img');
-image.src = 'path/to/image.jpg';
+image.src = '../img/cat.png';
 document.body.appendChild(image);
 
 // Example code to handle a button click event
