@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resolution Switching</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Resolution Switching</h1>
+  <p>Testing image resolution switching using srcset and sizes attributes.</p>
+  <img srcset="img/petals.avif 500w,
+               img/crocus.webp 800w,
+               img/cat.png 1200w"
+       sizes="(max-width: 500px) 80vw,
+              (max-width: 800px) 70vw,
+              50vw"
+       alt="Resolution Switching Example">
+</div>
+</body>
+</html>
