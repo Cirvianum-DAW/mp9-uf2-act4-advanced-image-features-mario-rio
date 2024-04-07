@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resolution Switching</title>
-<link rel="stylesheet" href="css/resolution_switching.css">
+<title>Figure Picture</title>
+<link rel="stylesheet" href="css/figure_picture.css">
 <link rel="stylesheet" href="css/navbar.css">
-
 </head>
+
 <body>
 
 <nav>
@@ -20,17 +20,14 @@
   </ul>
 </nav>
 
-<div class="container">
-  <h1>Resolution Switching</h1>
-  <p>Testing image resolution switching using srcset and sizes attributes.</p>
-  <img srcset="img/petals.avif 500w,
-               img/crocus.webp 800w,
-               img/cat.png 1200w"
-       sizes="(max-width: 500px) 80vw,
-              (max-width: 800px) 70vw,
-              50vw"
-       alt="Resolution Switching Example">
-</div>
+<h1>Figure Picture Example</h1>
+
+<figure>
+  <img src="img/cat.png" alt="A sleeping cat">
+  <figcaption>This is a cute sleeping cat.</figcaption>
+</figure>
+
+<p>The &lt;figure&gt; element is used to encapsulate media content such as images, illustrations, diagrams, code snippets, etc., along with their captions using the &lt;figcaption&gt; element. It provides semantic meaning to the content and allows for easy styling and accessibility improvements.</p>
 
 </body>
 </html>

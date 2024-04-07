@@ -1,0 +1,10 @@
+figure {
+  text-align: center;
+  margin: 20px;
+}
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+}
