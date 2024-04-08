@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resolution Switching</title>
-<link rel="stylesheet" href="css/resolution_switching.css">
-<link rel="stylesheet" href="css/navbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolution Switching</title>
+    <link rel="stylesheet" href="css/resolution_switching.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Basic Image</a></li>
+        <li><a href="resolution_switching.html">Resolution Switching</a></li>
+        <li><a href="image_alignment.html">Image Alignment</a></li>
+        <li><a href="image_gallery.html">Image Gallery</a></li>
+        <li><a href="figure_picture.html">Figure Picture</a></li>
+      </ul>
+    </nav>
 
-</head>
-<body>
-
-<nav>
-  <ul>
-    <li><a href="basic_image.html">Basic Image</a></li>
-    <li><a href="resolution_switching.html">Resolution Switching</a></li>
-    <li><a href="image_alignment.html">Image Alignment</a></li>
-    <li><a href="image_gallery.html">Image Gallery</a></li>
-    <li><a href="figure_picture.html">Figure Picture</a></li>
-  </ul>
-</nav>
-
-<div class="container">
-  <h1>Resolution Switching</h1>
-  <p>Testing image resolution switching using srcset and sizes attributes.</p>
-  <img srcset="img/petals.avif 500w,
-               img/crocus.webp 800w,
-               img/cat.png 1200w"
-       sizes="(max-width: 500px) 80vw,
+    <div class="container">
+      <h1>Resolution Switching</h1>
+      <p>
+        Testing image resolution switching using srcset and sizes attributes.
+      </p>
+      <img
+        srcset="img/petals.avif 500w, img/crocus.webp 800w, img/cat.png 1200w"
+        sizes="(max-width: 500px) 80vw,
               (max-width: 800px) 70vw,
               50vw"
-       alt="Resolution Switching Example">
-</div>
-
-</body>
+        alt="Resolution Switching Example"
+      />
+    </div>
+  </body>
 </html>

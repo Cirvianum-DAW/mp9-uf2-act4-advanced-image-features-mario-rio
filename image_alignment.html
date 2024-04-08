@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clickable Image Map</title>
-<link rel="stylesheet" href="css/image_alignment.css">
-<link rel="stylesheet" href="css/navbar.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickable Image Map</title>
+    <link rel="stylesheet" href="css/image_alignment.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Basic Image</a></li>
+        <li><a href="resolution_switching.html">Resolution Switching</a></li>
+        <li><a href="image_alignment.html">Image Alignment</a></li>
+        <li><a href="image_gallery.html">Image Gallery</a></li>
+        <li><a href="figure_picture.html">Figure Picture</a></li>
+      </ul>
+    </nav>
 
-<nav>
-  <ul>
-    <li><a href="basic_image.html">Basic Image</a></li>
-    <li><a href="resolution_switching.html">Resolution Switching</a></li>
-    <li><a href="image_alignment.html">Image Alignment</a></li>
-    <li><a href="image_gallery.html">Image Gallery</a></li>
-    <li><a href="figure_picture.html">Figure Picture</a></li>
-  </ul>
-</nav>
+    <h1>Clickable Image Map of Spain</h1>
 
-<h1>Clickable Image Map of Spain</h1>
+    <p>Click on different regions of the map to learn more:</p>
 
-<p>Click on different regions of the map to learn more:</p>
+    <img
+      src="img/spain_map.png"
+      alt="Map of Spain"
+      usemap="#spainmap"
+      width="600"
+      height="600"
+    />
 
-<img src="img/spain_map.png" alt="Map of Spain" usemap="#spainmap" width="600" height="600">
+    <map name="spainmap">
+      <area
+        shape="circle"
+        coords="300,300,20"
+        alt="Madrid"
+        href="https://www.madrid.es/portal/site/munimadrid"
+      />
+      <area
+        shape="rect"
+        coords="460,200,520,260"
+        alt="Barcelona"
+        href="https://www.barcelona.cat/es"
+      />
+      <area
+        shape="poly"
+        coords="200,380,240,400,240,440,200,460,160,440,160,400"
+        alt="Sevilla"
+        href="https://www.sevilla.org/"
+      />
+    </map>
 
-<map name="spainmap">
-  <area shape="circle" coords="300,300,20" alt="Madrid" href="https://www.madrid.es/portal/site/munimadrid">
-  <area shape="rect" coords="460,200,520,260" alt="Barcelona" href="https://www.barcelona.cat/es">
-  <area shape="poly" coords="200,380,240,400,240,440,200,460,160,440,160,400" alt="Sevilla" href="https://www.sevilla.org/">
-</map>
-
-<p>The max-width property in the CSS makes images responsive by setting the maximum width they can occupy within their parent container. This ensures that images scale down proportionally when the screen size is reduced, preventing them from overflowing their container or causing horizontal scrolling. The height: auto; rule maintains the aspect ratio of the image, so it adjusts proportionally with the width, ensuring the image doesn't appear distorted.</p>
-
-</body>
+    <p>
+      The max-width property in the CSS makes images responsive by setting the
+      maximum width they can occupy within their parent container. This ensures
+      that images scale down proportionally when the screen size is reduced,
+      preventing them from overflowing their container or causing horizontal
+      scrolling. The height: auto; rule maintains the aspect ratio of the image,
+      so it adjusts proportionally with the width, ensuring the image doesn't
+      appear distorted.
+    </p>
+  </body>
 </html>
